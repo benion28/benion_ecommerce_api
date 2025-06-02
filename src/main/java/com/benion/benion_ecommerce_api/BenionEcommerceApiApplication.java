@@ -7,7 +7,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class BenionEcommerceApiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BenionEcommerceApiApplication.class, args);
+        var orderService = new OrderService(new PaypalPaymentService());
+        // var orderService = new OrderService(new StripePaymentService());
+        orderService.placeOrder();
+
+//        SpringApplication.run(BenionEcommerceApiApplication.class, args);
     }
 
 }
