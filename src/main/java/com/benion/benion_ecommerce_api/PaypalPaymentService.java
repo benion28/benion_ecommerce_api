@@ -1,5 +1,8 @@
 package com.benion.benion_ecommerce_api;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class PaypalPaymentService implements PaymentService
 {
     @Override
