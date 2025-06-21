@@ -1,10 +1,10 @@
-package com.benion.benion_ecommerce_api;
+package com.codewithmosh.store;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BenionEcommerceApiApplicationTests {
+class StoreApplicationTests {
 
     @Test
     void contextLoads() {
