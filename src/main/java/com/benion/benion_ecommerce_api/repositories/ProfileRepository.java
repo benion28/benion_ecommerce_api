@@ -1,6 +1,6 @@
-package com.codewithmosh.store.repositories;
+package com.benion.benion_ecommerce_api.repositories;
 
-import com.codewithmosh.store.entities.Profile;
+import com.benion.benion_ecommerce_api.entities.Profile;
 import org.springframework.data.repository.CrudRepository;
 
 public interface ProfileRepository extends CrudRepository<Profile, Long> {

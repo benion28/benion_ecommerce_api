@@ -1,4 +1,4 @@
-package com.codewithmosh.store.entities;
+package com.benion.benion_ecommerce_api.entities;
 
 import jakarta.persistence.*;
 import lombok.Getter;
