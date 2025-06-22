@@ -2,8 +2,8 @@ spring:
   application:
     name: store
   datasource:
-    url: jdbc:mysql://localhost:3306/store_api?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/benion_store_api?createDatabaseIfNotExist=true
     username: root
-    password: MyPassword!
+    password: rice8828
   jpa:
     show-sql: true

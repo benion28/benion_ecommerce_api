@@ -5,14 +5,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.1</version>
+        <version>3.5.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.codewithmosh</groupId>
-    <artifactId>store</artifactId>
+    <groupId>com.benion</groupId>
+    <artifactId>benion_ecommerce_api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>store</name>
-    <description>store</description>
+    <name>benion_ecommerce_api</name>
+    <description>Demo project for Spring Boot</description>
     <url/>
     <licenses>
         <license/>
@@ -27,7 +27,7 @@
         <url/>
     </scm>
     <properties>
-        <java.version>23</java.version>
+        <java.version>24</java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -40,10 +40,20 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
+
         <dependency>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
             <groupId>org.springframework.boot</groupId>
@@ -67,7 +77,6 @@
             <scope>annotationProcessor</scope>
         </dependency>
 
-
     </dependencies>
 
     <build>
@@ -77,9 +86,9 @@
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>10.15.0</version>
                 <configuration>
-                    <url>jdbc:mysql://localhost:3306/store_api?createDatabaseIfNotExist=true</url>
+                    <url>jdbc:mysql://localhost:3306/benion_store_api?createDatabaseIfNotExist=true</url>
                     <user>root</user>
-                    <password>MyPassword!</password>
+                    <password>rice8828</password>
                     <cleanDisabled>false</cleanDisabled>
                 </configuration>
             </plugin>
