@@ -1,4 +1,4 @@
-package com.benion.benion_ecommerce_api;
+package com.benion.benion_ecommerce_api.controllers;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -10,7 +10,13 @@ public class HomeController {
     private String appName;
     @RequestMapping("/")
     public String index() {
-        System.out.println("Welcome to: " + appName);
+        System.out.println("Welcome to Home: " + appName);
+        return "index.html";
+    }
+
+    @RequestMapping("/hello")
+    public String sayHello() {
+        System.out.println("Welcome to SayHello: " + appName);
         return "index.html";
     }
 }
