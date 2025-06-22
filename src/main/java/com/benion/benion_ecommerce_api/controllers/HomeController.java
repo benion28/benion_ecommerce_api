@@ -11,12 +11,12 @@ public class HomeController {
     @RequestMapping("/")
     public String index() {
         System.out.println("Welcome to Home: " + appName);
-        return "index.html";
+        return "test.html";
     }
 
     @RequestMapping("/hello")
     public String sayHello() {
         System.out.println("Welcome to SayHello: " + appName);
-        return "index.html";
+        return "test.html";
     }
 }
